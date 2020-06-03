@@ -148,13 +148,6 @@ public class CursomcApplication implements CommandLineRunner{
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
