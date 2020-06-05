@@ -11,6 +11,8 @@ import com.example.cursomc.repositories.CategoriaRepository;
 import com.example.cursomc.services.exceptions.DataIntegrityException;
 import com.example.cursomc.services.exceptions.ObjectNotFoundException;
 
+import antlr.collections.List;
+
 @Service
 public class CategoriaService {
 	
@@ -43,6 +45,10 @@ public class CategoriaService {
 			throw new DataIntegrityException("Não é possível excluir uma categoria que possui produtos");
 		}
 		
+	}
+	
+	public java.util.List<Categoria> findAll(){
+		return repo.findAll();
 	}
 
 }
